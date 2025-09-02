@@ -2,7 +2,7 @@ const projects = [
   {
     id: 'project3',
     title: 'DeFi Yield Farming Protocol',
-    img: '/project3/defi-yield.svg',
+    img: '/project3/Gemini_Generated_Image_jc3c5qjc3c5qjc3c.png',
     link: '/projects/project3',
     date: '2023',
     category: 'DeFi',
@@ -17,6 +17,7 @@ const projects = [
     menuColor: 'gold',
     menuFontColor: '#2D2D2D',
     fluidColor: '#0028FF',
+    images: [{ tag: 'medium', src: '/project3/Gemini_Generated_Image_jc3c5qjc3c5qjc3c.png' }],
 
     desc: [
       'Built a comprehensive DeFi yield farming protocol on Ethereum with smart contracts handling $2M+ in total value locked (TVL).',
@@ -43,6 +44,7 @@ const projects = [
     menuColor: '#5C58EB',
     menuFontColor: '#f0f4f1',
     fluidColor: '#A3A714',
+    images: [{ tag: 'medium', src: '/project4/Gemini_Generated_Image_8sccar8sccar8scc.png' }],
 
     desc: [
       'Developed an AI-powered NFT marketplace that uses computer vision and NLP to automatically generate metadata and pricing recommendations.',
@@ -69,6 +71,7 @@ const projects = [
     menuColor: '#FFD54F',
     menuFontColor: '#000000',
     fluidColor: '#002AB0',
+    images: [{ tag: 'medium', src: '/project5/Gemini_Generated_Image_adt7phadt7phadt7.png' }],
 
     desc: [
       'Built a comprehensive blockchain analytics dashboard that processes on-chain data from Ethereum, Polygon, and BSC networks.',
@@ -95,6 +98,7 @@ const projects = [
     menuColor: '#00a8c1',
     menuFontColor: '#f0f4f1',
     fluidColor: '#FF573E',
+    images: [{ tag: 'medium', src: '/project1/Gemini_Generated_Image_k4bahvk4bahvk4ba.png' }],
 
     desc: [
       'Built an advanced AI system that predicts real estate prices with 94% accuracy using ensemble learning models including XGBoost, Random Forest, and Neural Networks.',
@@ -127,6 +131,7 @@ const projects = [
     menuColor: '#170053',
     menuFontColor: '#f0f4f1',
     fluidColor: '#E8FFC8',
+    images: [{ tag: 'medium', src: '/project2/blockchain-security.svg' }],
 
     desc: [
       'Developed BlockChainGuard, a comprehensive security platform that uses AI and machine learning to detect and prevent blockchain threats including smart contract vulnerabilities and malicious transactions.',
