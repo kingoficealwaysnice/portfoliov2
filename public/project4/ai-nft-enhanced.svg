@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-nft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a0033"/>
+      <stop offset="100%" style="stop-color:#330066"/>
+    </linearGradient>
+    <linearGradient id="nft-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff006e"/>
+      <stop offset="100%" style="stop-color:#8338ec"/>
+    </linearGradient>
+    <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06ffa5"/>
+      <stop offset="100%" style="stop-color:#00d9ff"/>
+    </linearGradient>
+    <filter id="glow-nft">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="radial-nft">
+      <stop offset="0%" style="stop-color:#ff006e"/>
+      <stop offset="100%" style="stop-color:#8338ec"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bg-nft)"/>
+  
+  <!-- AI Detection Network -->
+  <g stroke="#06ffa5" stroke-width="1" opacity="0.4">
+    <path d="M100,100 L700,100"/>
+    <path d="M100,200 L700,200"/>
+    <path d="M100,300 L700,300"/>
+    <path d="M100,400 L700,400"/>
+    <path d="M100,500 L700,500"/>
+    <path d="M200,50 L200,550"/>
+    <path d="M300,50 L300,550"/>
+    <path d="M400,50 L400,550"/>
+    <path d="M500,50 L500,550"/>
+    <path d="M600,50 L600,550"/>
+  </g>
+  
+  <!-- NFT Grid -->
+  <g filter="url(#glow-nft)">
+    <!-- NFT 1 -->
+    <g transform="translate(200, 200)">
+      <rect x="-40" y="-50" width="80" height="100" rx="10" fill="url(#nft-gradient)"/>
+      <circle cx="0" cy="-20" r="20" fill="#ffffff" opacity="0.9"/>
+      <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">CryptoPunk</text>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff">2.5 ETH</text>
+      <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#06ffa5">✓ Verified</text>
+    </g>
+    
+    <!-- NFT 2 -->
+    <g transform="translate(320, 200)">
+      <rect x="-40" y="-50" width="80" height="100" rx="10" fill="url(#nft-gradient)"/>
+      <circle cx="0" cy="-20" r="20" fill="#ffffff" opacity="0.9"/>
+      <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">BAYC</text>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff">45 ETH</text>
+      <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#06ffa5">✓ Verified</text>
+    </g>
+    
+    <!-- NFT 3 -->
+    <g transform="translate(440, 200)">
+      <rect x="-40" y="-50" width="80" height="100" rx="10" fill="url(#nft-gradient)"/>
+      <circle cx="0" cy="-20" r="20" fill="#ffffff" opacity="0.9"/>
+      <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Azuki</text>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff">12 ETH</text>
+      <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#06ffa5">✓ Verified</text>
+    </g>
+    
+    <!-- NFT 4 -->
+    <g transform="translate(560, 200)">
+      <rect x="-40" y="-50" width="80" height="100" rx="10" fill="#ff4444" opacity="0.8"/>
+      <circle cx="0" cy="-20" r="20" fill="#ffffff" opacity="0.9"/>
+      <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Fake NFT</text>
+      <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff">0.5 ETH</text>
+      <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ff4444">⚠ Scam</text>
+    </g>
+  </g>
+  
+  <!-- AI Detection Nodes -->
+  <g>
+    <g transform="translate(150, 350)">
+      <circle cx="0" cy="0" r="25" fill="url(#ai-gradient)"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0a0a0a">AI Scan</text>
+    </g>
+    
+    <g transform="translate(280, 350)">
+      <circle cx="0" cy="0" r="25" fill="url(#ai-gradient)"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0a0a0a">Fraud</text>
+    </g>
+    
+    <g transform="translate(410, 350)">
+      <circle cx="0" cy="0" r="25" fill="url(#ai-gradient)"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0a0a0a">Price</text>
+    </g>
+    
+    <g transform="translate(540, 350)">
+      <circle cx="0" cy="0" r="25" fill="url(#ai-gradient)"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0a0a0a">Verify</text>
+    </g>
+    
+    <g transform="translate(670, 350)">
+      <circle cx="0" cy="0" r="25" fill="url(#ai-gradient)"/>
+      <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#0a0a0a">Rank</text>
+    </g>
+  </g>
+  
+  <!-- Detection arrows -->
+  <g stroke="#06ffa5" stroke-width="2" opacity="0.6">
+    <path d="M200,200 L200,325"/>
+    <path d="M320,200 L320,325"/>
+    <path d="M440,200 L440,325"/>
+    <path d="M560,200 L560,325"/>
+  </g>
+  
+  <!-- AI Brain -->
+  <g transform="translate(400, 120)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#06ffa5" stroke-width="3"/>
+    <path d="M-20,-10 L20,-10 M-25,0 L25,0 M-20,10 L20,10" stroke="#06ffa5" stroke-width="2"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#06ffa5">AI Engine</text>
+    <text x="0" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#06ffa5">Auto-Pricing</text>
+  </g>
+  
+  <!-- Statistics -->
+  <g font-family="Arial, sans-serif" font-size="16" fill="#ffffff">
+    <text x="100" y="480" font-weight="bold">Total Volume: 45K ETH</text>
+    <text x="400" y="480" text-anchor="middle" font-weight="bold">Verified NFTs: 12,847</text>
+    <text x="700" y="480" text-anchor="end" font-weight="bold">Fraud Detected: 234</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#ff006e">
+    AI-Powered NFT Marketplace
+  </text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" opacity="0.9">
+    Fraud Detection & Auto-Pricing with ML
+  </text>
+</svg>

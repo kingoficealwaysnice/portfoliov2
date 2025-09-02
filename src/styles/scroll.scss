@@ -1,5 +1,7 @@
 .lenis.lenis-smooth {
   scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
@@ -12,4 +14,17 @@
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+.lenis.lenis-smooth body {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+* {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }

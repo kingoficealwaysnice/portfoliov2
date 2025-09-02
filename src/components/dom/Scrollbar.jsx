@@ -17,7 +17,11 @@ function Scrollbar() {
     const maxTopValueInVh = 80 - 6;
     const newTopValueInVh = Math.min(maxTopValueInVh, progress * maxTopValueInVh);
 
-    gsap.to(progressBar.current, { top: `${newTopValueInVh}svh`, duration: 0.3 });
+    gsap.to(progressBar.current, {
+      top: `${newTopValueInVh}svh`,
+      duration: 0.4,
+      ease: 'power2.out'
+    });
   };
 
   useScroll(({ scroll, limit }) => {

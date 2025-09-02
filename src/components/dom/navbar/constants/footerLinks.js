@@ -1,19 +1,19 @@
 const footerLinks = [
   {
-    title: 'Github',
-    href: 'https://github.com/Giats2498',
+    title: 'GitHub',
+    href: 'https://github.com/kingoficealwaysnice',
   },
   {
     title: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/giats',
+    href: 'https://www.linkedin.com/in/khushal-singh-%E2%9C%AA',
+  },
+  {
+    title: 'Kaggle',
+    href: 'https://www.kaggle.com/giatsdev',
   },
   {
     title: 'Instagram',
-    href: 'https://www.instagram.com/giats_/',
-  },
-  {
-    title: 'Twitter',
-    href: 'https://twitter.com/Giats_',
+    href: 'https://www.instagram.com/zutck',
   },
 ];
 export default footerLinks;

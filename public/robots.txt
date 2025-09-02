@@ -6,4 +6,4 @@ Allow: /
 Host: https://giats.me/
 
 # Sitemaps
-Sitemap: https://giats.me/sitemap.xml
+Sitemap: https://khushal.me/sitemap.xml

@@ -31,10 +31,13 @@ import { useShallow } from 'zustand/react/shallow';
 import { useStore } from '@src/store';
 
 if (typeof window !== 'undefined') {
-  gsap.defaults({ ease: 'none' });
+  gsap.defaults({
+    ease: 'power2.inOut',
+    duration: 0.6
+  });
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.ticker.lagSmoothing(0);
+  gsap.ticker.lagSmoothing(1000, 16);
   gsap.ticker.remove(gsap.updateRoot);
   Tempus?.add((time) => {
     gsap.updateRoot(time / 1000);
@@ -43,6 +46,11 @@ if (typeof window !== 'undefined') {
   window.scrollTo(0, 0);
   window.history.scrollRestoration = 'manual';
   ScrollTrigger.clearScrollMemory(window.history.scrollRestoration);
+
+  ScrollTrigger.config({
+    limitCallbacks: true,
+    syncInterval: 40,
+  });
 }
 
 function MyApp({ Component, pageProps, router }) {
@@ -63,6 +71,12 @@ function MyApp({ Component, pageProps, router }) {
       syncTouch: true,
       wrapper: mainRef.current || undefined,
       content: mainContainerRef.current || undefined,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: 0.1,
+      infinite: false,
+      gestureOrientation: 'vertical',
+      orientation: 'vertical',
     });
 
     setLenis(lenis);

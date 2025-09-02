@@ -14,9 +14,9 @@ function GoTop() {
 
   const scrollToTop = useCallback(() => {
     lenis.scrollTo(0, {
-      duration: 1.5,
+      duration: 2,
       force: true,
-      easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
+      easing: (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t),
       onComplete: () => {
         lenis.start();
       },

@@ -51,12 +51,12 @@ function Clients() {
   return (
     <section ref={rootRef} className={clsx(styles.root, 'layout-grid-inner')}>
       <h1 className={clsx(styles.sectionTitle, 'h1')}>
-        <AppearByWords>Clients</AppearByWords>
+        <AppearByWords>Work Experience</AppearByWords>
       </h1>
       {isMobile ? <div className={styles.mobileEmpty} /> : null}
       {isMobile ? (
         <div className={styles.mobileCount}>
-          <AppearTitle>2024</AppearTitle>
+          <AppearTitle>JUNE 2025 - AUGUST 2025</AppearTitle>
         </div>
       ) : null}
       <div
@@ -71,17 +71,14 @@ function Clients() {
       {isMobile ? (
         <div className={styles.textMobile}>
           <AppearTitle>
-            <h4 className={clsx('h4', 'bold')}>Company 1</h4>
+            <h4 className={clsx('h4', 'bold')}>Venley Capitals</h4>
           </AppearTitle>
           <AppearTitle>
-            <div className="p-l">Lorem ipsum dolor sit amet, consectetur</div>
-            <div className="p-l">adipiscing elit. Sed do eiusmod tempor</div>
-            <div className="p-l">incididunt ut labore et dolore magna aliqua.</div>
-            <div className="p-l">Ut enim ad minim veniam, quis nostrud</div>
-            <div className="p-l">exercitation ullamco laboris nisi ut aliquip</div>
-            <div className="p-l">ex ea commodo consequat. Duis aute irure</div>
-            <div className="p-l">dolor in reprehenderit in voluptate velit</div>
-            <div className="p-l">esse cillum dolore eu fugiat nulla pariatur.</div>
+            <div className="p-l">Finance Intern - Analyzed market trends and</div>
+            <div className="p-l">financial data using Python & SQL. Developed</div>
+            <div className="p-l">predictive models for portfolio optimization.</div>
+            <div className="p-l">Created automated risk assessment tools and</div>
+            <div className="p-l">contributed to ML-driven investment strategies.</div>
           </AppearTitle>
         </div>
       ) : null}
@@ -95,20 +92,17 @@ function Clients() {
             className={styles.firstText}
           >
             <AppearTitle>
-              <h6 className="h6">2024</h6>
+              <h6 className="h6">JUNE 2025 - AUGUST 2025</h6>
             </AppearTitle>
             <AppearTitle>
-              <h4 className={clsx('h4', 'bold', styles.title)}>Company 1</h4>
+              <h4 className={clsx('h4', 'bold', styles.title)}>Venley Capitals</h4>
             </AppearTitle>
             <AppearTitle>
-              <div className="p-l">Lorem ipsum dolor sit amet, consectetur</div>
-              <div className="p-l">adipiscing elit. Sed do eiusmod tempor</div>
-              <div className="p-l">incididunt ut labore et dolore magna aliqua.</div>
-              <div className="p-l">Ut enim ad minim veniam, quis nostrud</div>
-              <div className="p-l">exercitation ullamco laboris nisi ut aliquip</div>
-              <div className="p-l">ex ea commodo consequat. Duis aute irure</div>
-              <div className="p-l">dolor in reprehenderit in voluptate velit</div>
-              <div className="p-l">esse cillum dolore eu fugiat nulla pariatur.</div>
+              <div className="p-l">Finance Intern - Analyzed market trends and</div>
+              <div className="p-l">financial data using Python & SQL. Developed</div>
+              <div className="p-l">predictive models for portfolio optimization.</div>
+              <div className="p-l">Created automated risk assessment tools and</div>
+              <div className="p-l">contributed to ML-driven investment strategies.</div>
             </AppearTitle>
           </div>
         </>
@@ -117,7 +111,7 @@ function Clients() {
       {isMobile ? <div className={styles.mobileEmpty} /> : null}
       {isMobile ? (
         <div className={styles.mobileCount}>
-          <AppearTitle>2023</AppearTitle>
+          <AppearTitle>2025</AppearTitle>
         </div>
       ) : null}
       <div
@@ -132,17 +126,14 @@ function Clients() {
       {isMobile ? (
         <div className={styles.textMobile}>
           <AppearTitle>
-            <h4 className={clsx('h4', 'bold')}>Company 2</h4>
+            <h4 className={clsx('h4', 'bold')}>BlueStock</h4>
           </AppearTitle>
           <AppearTitle>
-            <div className="p-l">Lorem ipsum dolor sit amet, consectetur</div>
-            <div className="p-l">adipiscing elit. Sed do eiusmod tempor</div>
-            <div className="p-l">incididunt ut labore et dolore magna aliqua.</div>
-            <div className="p-l">Ut enim ad minim veniam, quis nostrud</div>
-            <div className="p-l">exercitation ullamco laboris nisi ut aliquip</div>
-            <div className="p-l">ex ea commodo consequat. Duis aute irure</div>
-            <div className="p-l">dolor in reprehenderit in voluptate velit</div>
-            <div className="p-l">esse cillum dolore eu fugiat nulla pariatur.</div>
+            <div className="p-l">Machine Learning Intern - Developed neural</div>
+            <div className="p-l">networks for stock market prediction using</div>
+            <div className="p-l">TensorFlow and PyTorch. Built sentiment</div>
+            <div className="p-l">analysis models for market insights and</div>
+            <div className="p-l">optimized trading algorithms with ML.</div>
           </AppearTitle>
         </div>
       ) : null}
@@ -155,20 +146,17 @@ function Clients() {
             className={styles.secondText}
           >
             <AppearTitle>
-              <h6 className="h6">2023</h6>
+              <h6 className="h6">2025</h6>
             </AppearTitle>
             <AppearTitle>
-              <h4 className={clsx('h4', 'bold', styles.title)}>Company 2</h4>
+              <h4 className={clsx('h4', 'bold', styles.title)}>BlueStock</h4>
             </AppearTitle>
             <AppearTitle>
-              <div className="p-l">Lorem ipsum dolor sit amet, consectetur</div>
-              <div className="p-l">adipiscing elit. Sed do eiusmod tempor</div>
-              <div className="p-l">incididunt ut labore et dolore magna aliqua.</div>
-              <div className="p-l">Ut enim ad minim veniam, quis nostrud</div>
-              <div className="p-l">exercitation ullamco laboris nisi ut aliquip</div>
-              <div className="p-l">ex ea commodo consequat. Duis aute irure</div>
-              <div className="p-l">dolor in reprehenderit in voluptate velit</div>
-              <div className="p-l">esse cillum dolore eu fugiat nulla pariatur.</div>
+              <div className="p-l">Machine Learning Intern - Developed neural</div>
+              <div className="p-l">networks for stock market prediction using</div>
+              <div className="p-l">TensorFlow and PyTorch. Built sentiment</div>
+              <div className="p-l">analysis models for market insights and</div>
+              <div className="p-l">optimized trading algorithms with ML.</div>
             </AppearTitle>
           </div>
           <div className={styles.fourthEmpty} />
@@ -177,7 +165,7 @@ function Clients() {
       {isMobile ? <div className={styles.mobileEmpty} /> : null}
       {isMobile ? (
         <div className={styles.mobileCount}>
-          <AppearTitle>2021</AppearTitle>
+          <AppearTitle>2025</AppearTitle>
         </div>
       ) : null}
       <div
@@ -192,17 +180,14 @@ function Clients() {
       {isMobile ? (
         <div className={styles.textMobile}>
           <AppearTitle>
-            <h4 className={clsx('h4', 'bold')}>Company 3</h4>
+            <h4 className={clsx('h4', 'bold')}>CAREMEEZ</h4>
           </AppearTitle>
           <AppearTitle>
-            <div className="p-l">Lorem ipsum dolor sit amet, consectetur</div>
-            <div className="p-l">adipiscing elit. Sed do eiusmod tempor</div>
-            <div className="p-l">incididunt ut labore et dolore magna aliqua.</div>
-            <div className="p-l">Ut enim ad minim veniam, quis nostrud</div>
-            <div className="p-l">exercitation ullamco laboris nisi ut aliquip</div>
-            <div className="p-l">ex ea commodo consequat. Duis aute irure</div>
-            <div className="p-l">dolor in reprehenderit in voluptate velit</div>
-            <div className="p-l">esse cillum dolore eu fugiat nulla pariatur.</div>
+            <div className="p-l">A.I Automation Intern - Designed intelligent</div>
+            <div className="p-l">automation workflows using computer vision</div>
+            <div className="p-l">and NLP. Built AI chatbots and automated</div>
+            <div className="p-l">customer service systems. Implemented</div>
+            <div className="p-l">ML models for process optimization.</div>
           </AppearTitle>
         </div>
       ) : null}
@@ -216,20 +201,17 @@ function Clients() {
             className={styles.thirdText}
           >
             <AppearTitle>
-              <h6 className="h6">2021</h6>
+              <h6 className="h6">2025</h6>
             </AppearTitle>
             <AppearTitle>
-              <h4 className={clsx('h4', 'bold', styles.title)}>Company 3</h4>
+              <h4 className={clsx('h4', 'bold', styles.title)}>CAREMEEZ</h4>
             </AppearTitle>
             <AppearTitle>
-              <div className="p-l">Lorem ipsum dolor sit amet, consectetur</div>
-              <div className="p-l">adipiscing elit. Sed do eiusmod tempor</div>
-              <div className="p-l">incididunt ut labore et dolore magna aliqua.</div>
-              <div className="p-l">Ut enim ad minim veniam, quis nostrud</div>
-              <div className="p-l">exercitation ullamco laboris nisi ut aliquip</div>
-              <div className="p-l">ex ea commodo consequat. Duis aute irure</div>
-              <div className="p-l">dolor in reprehenderit in voluptate velit</div>
-              <div className="p-l">esse cillum dolore eu fugiat nulla pariatur.</div>
+              <div className="p-l">A.I Automation Intern - Designed intelligent</div>
+              <div className="p-l">automation workflows using computer vision</div>
+              <div className="p-l">and NLP. Built AI chatbots and automated</div>
+              <div className="p-l">customer service systems. Implemented</div>
+              <div className="p-l">ML models for process optimization.</div>
             </AppearTitle>
           </div>
         </>

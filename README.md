@@ -1,8 +1,8 @@
 ![giats.me cover](/public/og.png)
 
-# giats.me — Personal Portfolio Website
+# khushal.me — Personal Portfolio Website
 
-This is the **original source code** for [giats.me](https://giats.me), the personal portfolio website of **Evangelos Giatsidis**.
+This is the **original source code** for [khushal.me](https://khushal.me), the personal portfolio website of **Khushal**.
 
 I designed and built this project from scratch using modern web technologies to push the creative limits of front-end development. The site blends smooth animation, layered visuals, and technical precision to present my work in a unique and immersive way.
 
@@ -47,6 +47,11 @@ Throughout the content layer, I created intentional **cut-out sections** or “w
 - **Animation:** [GSAP](https://greensock.com/gsap/) with ScrollTrigger
 - **Transitions & Scroll UX:** Custom GSAP-powered page transitions and smooth scroll behavior
 - **Styling:** SCSS / CSS Modules
+- **Machine Learning:** TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy
+- **Blockchain Development:** Solidity, Web3.js, Ethers.js, Hardhat, Truffle
+- **AI/ML Infrastructure:** Docker, Kubernetes, MLOps, AWS SageMaker, Vertex AI
+- **Data Engineering:** Apache Spark, PostgreSQL, MongoDB, Redis
+- **DeFi & Web3:** Uniswap SDK, Aave Protocol, Chainlink, IPFS
 - **Hosting:** [Vercel](https://vercel.com)
 
 ---
@@ -65,7 +70,7 @@ This project is licensed under the **MIT License (with attribution required)**.
 
 > If you use this code or parts of it, **credit is required**:
 >
-> _"Original portfolio design and development by Evangelos Giatsidis — [giats.me](https://giats.me)"_
+> _"Original portfolio design and development by Khushal Singh — [khushal.me](https://khushal.me)"_
 
 You are welcome to learn from or build upon this project, but **do not claim it as your own or use it commercially without permission.**
 
@@ -73,10 +78,12 @@ You are welcome to learn from or build upon this project, but **do not claim it 
 
 ## 📬 Contact
 
-- 📧 Email: [vaggelisgiats@gmail.com](mailto:vaggelisgiats@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/giats](https://www.linkedin.com/in/giats/)
-- 🌐 Website: [giats.me](https://giats.me)
-- 🐦 X (Twitter): [@Giats\_](https://x.com/Giats_)
+- 📧 Email: [khushal.singh1123@gmail.com](mailto:khushal.singh1123@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/khushal-singh-✪](https://www.linkedin.com/in/khushal-singh-%E2%9C%AA/)
+- 🌐 Website: [giats.dev](https://giats.dev)
+- 🎯 GitHub: [github.com/kingoficealwaysnice](https://github.com/kingoficealwaysnice)
+- 📸 Instagram: [instagram.com/zutck](https://www.instagram.com/zutck)
+- 📊 Kaggle: [kaggle.com/giatsdev](https://www.kaggle.com/giatsdev)
 
 ---
 

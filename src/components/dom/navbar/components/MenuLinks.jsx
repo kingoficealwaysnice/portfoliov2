@@ -156,9 +156,9 @@ function MenuLinks() {
             }}
             className={styles.menuListItem}
           >
-            <Link aria-label="Send email" scroll={false} href="mailto:vaggelisgiats@gmail.com">
-              <span>GET IN TOUCH</span>
-            </Link>
+            <Link aria-label="Send email" scroll={false} href="mailto:khushal.singh1123@gmail.com">
+                <span>GET IN TOUCH</span>
+              </Link>
           </div>
         </div>
         <div

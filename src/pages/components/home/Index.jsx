@@ -225,12 +225,12 @@ function Home() {
     <section ref={rootRef} className={clsx(styles.root)}>
       <div className={clsx(styles.topContainer, 'layout-grid-inner')}>
         <div className={styles.leftContainer}>
-          <h2 className="h2">Remarkable</h2>
-          <h2 className={clsx('h2', 'bold')}>Virtual Experiences</h2>
+          <h2 className="h2">Machine Learning</h2>
+          <h2 className={clsx('h2', 'bold')}>Blockchain & Web3</h2>
         </div>
         {!isMobile && (
           <h6 className={clsx('h6', styles.rightContainer)}>
-            With years of experience, I create immersive digital environments that elevate your virtual presence. Join me in redefining digital interaction.
+            Specialized in machine learning engineering and blockchain development, creating intelligent decentralized applications that leverage AI and Web3 technologies for the future of the internet.
           </h6>
         )}
       </div>
@@ -250,7 +250,7 @@ function Home() {
       </div>
       {isMobile && (
         <div className={styles.rightContainerMobile}>
-          <h6 className="h6"> With years of experience, I create immersive digital environments that elevate your virtual presence. Join me in redefining digital interaction.</h6>
+          <h6 className="h6"> Specialized in machine learning engineering and blockchain development, creating intelligent decentralized applications that leverage AI and Web3 technologies for the future of the internet.</h6>
         </div>
       )}
 

@@ -6,21 +6,21 @@ import Process from '@src/pages/about/components/process/Process';
 import CustomHead from '@src/components/dom/CustomHead';
 
 const seo = {
-  title: 'Giats - About',
-  description: 'Learn about my journey, values, and commitment to quality web and app solutions.',
+  title: 'Khushal Singh - Machine Learning Engineer & Blockchain Developer',
+  description: 'Learn about my journey as a Machine Learning Engineer and Blockchain Developer, specializing in AI-powered decentralized applications and Web3 technologies.',
   keywords: [
-    'Giats',
-    'About Evangelos Giatsidis',
-    'About me',
-    'Frontend Developer Journey',
-    'Web Developer Story',
-    'Professional Web Development',
-    'Frontend Development Expertise',
-    'Web Design Skills',
-    'Web Development Services',
-    'Web Design Expertise',
-    'Developer Profile',
-    'Quality Web Solutions',
+    'Khushal Singh',
+    'About Khushal Singh',
+    'Machine Learning Engineer',
+    'Blockchain Developer',
+    'Web3 Developer Profile',
+    'AI Developer Journey',
+    'Decentralized Applications',
+    'Smart Contract Developer',
+    'DeFi Expert',
+    'Machine Learning Expertise',
+    'Blockchain Development Services',
+    'AI Blockchain Integration',
   ],
 };
 function Page() {

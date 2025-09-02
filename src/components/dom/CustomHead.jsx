@@ -8,12 +8,12 @@ const OG_IMAGE = `${SITE_URL}/og.png`;
 const getSchema = () => ({
   '@context': 'http://schema.org',
   '@type': 'Person',
-  name: 'Evangelos (Giats) Giatsidis',
+  name: 'Khushal Singh',
   jobTitle: 'Senior Frontend Developer',
   url: SITE_URL,
   image: OG_IMAGE,
-  email: 'mailto:vaggelisgiats@gmail.com',
-  sameAs: ['https://www.linkedin.com/in/giats/', 'https://github.com/Giats2498', 'https://twitter.com/Giats_', 'https://www.instagram.com/giats_/'],
+  email: 'mailto:khushal.singh1123@gmail.com',
+  sameAs: ['https://www.linkedin.com/in/khushal-singh-%E2%9C%AA', 'https://github.com/kingoficealwaysnice', 'https://www.instagram.com/zutck'],
   alumniOf: [
     { '@type': 'Organization', name: 'Company 1' },
     { '@type': 'Organization', name: 'Company 2' },
@@ -32,7 +32,7 @@ function CustomHead({ title = '', description, keywords }) {
         <meta name="robots" content={process.env.NODE_ENV !== 'development' ? 'index,follow' : 'noindex,nofollow'} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="keywords" content={keywords && keywords.length ? keywords.join(',') : keywords} />
-        <meta name="author" content="Evangelos (Giats) Giatsidis" />
+        <meta name="author" content="Khushal Singh" />
         <meta name="referrer" content="no-referrer" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="geo.region" content="US" />
@@ -46,15 +46,17 @@ function CustomHead({ title = '', description, keywords }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:url" content="https://khushal.me" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@khushal_" />
+        <meta name="twitter:creator" content="@khushal_" />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={OG_IMAGE} />
 
         {/* Favicons */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://khushal.me/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
