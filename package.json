@@ -9,6 +9,9 @@
     "postbuild": "next-sitemap",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "18.17.0"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --cache"
