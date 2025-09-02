@@ -70,10 +70,10 @@ function ProjectImages({ project }) {
     <section className={clsx(styles.root, 'layout-grid-inner')}>
       {project.images && project.images.length > 0
         ? project.images.map((image, index) => (
-            <Fragment key={`${project.title}-image-${index}`}>
-              {renderMediaContainer({ ...image, index, title: project.title })}
-            </Fragment>
-          ))
+          <Fragment key={`${project.title}-image-${index}`}>
+            {renderMediaContainer({ ...image, index, title: project.title })}
+          </Fragment>
+        ))
         : null}
     </section>
   );
