@@ -25,8 +25,14 @@ function Clients() {
             .timeline({
               scrollTrigger: {
                 trigger: rootRef.current,
-                start: index === 0 ? `top-=${vw(35)}` : `top+=${vw(35 + 5.5555556 * index)}`,
-                end: index === 0 ? `bottom-=${vw(35 + 5.5555556 * index)}` : `bottom+=${vw(25)}`,
+                start:
+                  index === 0
+                    ? `top-=${vw(35)}`
+                    : `top+=${vw(35 + 5.5555556 * index)}`,
+                end:
+                  index === 0
+                    ? `bottom-=${vw(35 + 5.5555556 * index)}`
+                    : `bottom+=${vw(25)}`,
                 toggleActions: 'play none reverse none',
                 scrub: true,
                 scroller: document?.querySelector('main'),
@@ -74,11 +80,21 @@ function Clients() {
             <h4 className={clsx('h4', 'bold')}>Venley Capitals</h4>
           </AppearTitle>
           <AppearTitle>
-            <div className="p-l">Finance Intern - Analyzed market trends and</div>
-            <div className="p-l">financial data using Python & SQL. Developed</div>
-            <div className="p-l">predictive models for portfolio optimization.</div>
-            <div className="p-l">Created automated risk assessment tools and</div>
-            <div className="p-l">contributed to ML-driven investment strategies.</div>
+            <div className="p-l">
+              Finance Intern - Analyzed market trends and
+            </div>
+            <div className="p-l">
+              financial data using Python & SQL. Developed
+            </div>
+            <div className="p-l">
+              predictive models for portfolio optimization.
+            </div>
+            <div className="p-l">
+              Created automated risk assessment tools and
+            </div>
+            <div className="p-l">
+              contributed to ML-driven investment strategies.
+            </div>
           </AppearTitle>
         </div>
       ) : null}
@@ -95,14 +111,26 @@ function Clients() {
               <h6 className="h6">JUNE 2025 - AUGUST 2025</h6>
             </AppearTitle>
             <AppearTitle>
-              <h4 className={clsx('h4', 'bold', styles.title)}>Venley Capitals</h4>
+              <h4 className={clsx('h4', 'bold', styles.title)}>
+                Venley Capitals
+              </h4>
             </AppearTitle>
             <AppearTitle>
-              <div className="p-l">Finance Intern - Analyzed market trends and</div>
-              <div className="p-l">financial data using Python & SQL. Developed</div>
-              <div className="p-l">predictive models for portfolio optimization.</div>
-              <div className="p-l">Created automated risk assessment tools and</div>
-              <div className="p-l">contributed to ML-driven investment strategies.</div>
+              <div className="p-l">
+                Finance Intern - Analyzed market trends and
+              </div>
+              <div className="p-l">
+                financial data using Python & SQL. Developed
+              </div>
+              <div className="p-l">
+                predictive models for portfolio optimization.
+              </div>
+              <div className="p-l">
+                Created automated risk assessment tools and
+              </div>
+              <div className="p-l">
+                contributed to ML-driven investment strategies.
+              </div>
             </AppearTitle>
           </div>
         </>
@@ -129,8 +157,12 @@ function Clients() {
             <h4 className={clsx('h4', 'bold')}>BlueStock</h4>
           </AppearTitle>
           <AppearTitle>
-            <div className="p-l">Machine Learning Intern - Developed neural</div>
-            <div className="p-l">networks for stock market prediction using</div>
+            <div className="p-l">
+              Machine Learning Intern - Developed neural
+            </div>
+            <div className="p-l">
+              networks for stock market prediction using
+            </div>
             <div className="p-l">TensorFlow and PyTorch. Built sentiment</div>
             <div className="p-l">analysis models for market insights and</div>
             <div className="p-l">optimized trading algorithms with ML.</div>
@@ -152,8 +184,12 @@ function Clients() {
               <h4 className={clsx('h4', 'bold', styles.title)}>BlueStock</h4>
             </AppearTitle>
             <AppearTitle>
-              <div className="p-l">Machine Learning Intern - Developed neural</div>
-              <div className="p-l">networks for stock market prediction using</div>
+              <div className="p-l">
+                Machine Learning Intern - Developed neural
+              </div>
+              <div className="p-l">
+                networks for stock market prediction using
+              </div>
               <div className="p-l">TensorFlow and PyTorch. Built sentiment</div>
               <div className="p-l">analysis models for market insights and</div>
               <div className="p-l">optimized trading algorithms with ML.</div>
@@ -183,8 +219,12 @@ function Clients() {
             <h4 className={clsx('h4', 'bold')}>CAREMEEZ</h4>
           </AppearTitle>
           <AppearTitle>
-            <div className="p-l">A.I Automation Intern - Designed intelligent</div>
-            <div className="p-l">automation workflows using computer vision</div>
+            <div className="p-l">
+              A.I Automation Intern - Designed intelligent
+            </div>
+            <div className="p-l">
+              automation workflows using computer vision
+            </div>
             <div className="p-l">and NLP. Built AI chatbots and automated</div>
             <div className="p-l">customer service systems. Implemented</div>
             <div className="p-l">ML models for process optimization.</div>
@@ -207,9 +247,15 @@ function Clients() {
               <h4 className={clsx('h4', 'bold', styles.title)}>CAREMEEZ</h4>
             </AppearTitle>
             <AppearTitle>
-              <div className="p-l">A.I Automation Intern - Designed intelligent</div>
-              <div className="p-l">automation workflows using computer vision</div>
-              <div className="p-l">and NLP. Built AI chatbots and automated</div>
+              <div className="p-l">
+                A.I Automation Intern - Designed intelligent
+              </div>
+              <div className="p-l">
+                automation workflows using computer vision
+              </div>
+              <div className="p-l">
+                and NLP. Built AI chatbots and automated
+              </div>
               <div className="p-l">customer service systems. Implemented</div>
               <div className="p-l">ML models for process optimization.</div>
             </AppearTitle>

@@ -4,7 +4,12 @@ import fragmentShader from '@src/components/canvas/fluid/glsl/post.frag';
 import hexToRgb from '@src/components/canvas/fluid/utils';
 
 class FluidEffect extends Effect {
-  constructor({ tFluid, intensity = 1.0, fluidColor = '#ffffff', backgroundColor = '#000000' } = {}) {
+  constructor({
+    tFluid,
+    intensity = 1.0,
+    fluidColor = '#ffffff',
+    backgroundColor = '#000000',
+  } = {}) {
     const uniforms = new Map(
       Object.entries({
         tFluid: new Uniform(tFluid),

@@ -7,7 +7,8 @@ import CustomHead from '@src/components/dom/CustomHead';
 
 const seo = {
   title: 'Khushal Singh - Machine Learning Engineer & Blockchain Developer',
-  description: 'Learn about my journey as a Machine Learning Engineer and Blockchain Developer, specializing in AI-powered decentralized applications and Web3 technologies.',
+  description:
+    'Learn about my journey as a Machine Learning Engineer and Blockchain Developer, specializing in AI-powered decentralized applications and Web3 technologies.',
   keywords: [
     'Khushal Singh',
     'About Khushal Singh',

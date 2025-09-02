@@ -168,7 +168,10 @@ const useMaterials = () => {
     Object.values(shaderMaterials).forEach((material) => {
       const aspectRatio = size.width / (size.height + 400);
 
-      material.uniforms.texelSize.value.set(1 / (OPTS.simRes * aspectRatio), 1 / OPTS.simRes);
+      material.uniforms.texelSize.value.set(
+        1 / (OPTS.simRes * aspectRatio),
+        1 / OPTS.simRes,
+      );
       material.vertexShader = baseVertex;
       material.depthTest = false;
       material.depthWrite = false;

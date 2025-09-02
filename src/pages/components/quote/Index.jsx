@@ -16,7 +16,9 @@ function Quote() {
       <h3 ref={textRef} className={clsx(styles.text, 'h3')}>
         {!isLoading && (
           <TextOpacity textRef={textRef.current} trigger={rootRef.current}>
-            When designing ML systems, it's crucial to remember: every algorithm encodes our philosophy. The tools we choose today shape tomorrow's intelligence.
+            When designing ML systems, it&apos;s crucial to remember: every
+            algorithm encodes our philosophy. The tools we choose today shape
+            tomorrow&apos;s intelligence.
           </TextOpacity>
         )}
       </h3>

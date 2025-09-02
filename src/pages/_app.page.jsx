@@ -33,7 +33,7 @@ import { useStore } from '@src/store';
 if (typeof window !== 'undefined') {
   gsap.defaults({
     ease: 'power2.inOut',
-    duration: 0.6
+    duration: 0.6,
   });
   gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +54,14 @@ if (typeof window !== 'undefined') {
 }
 
 function MyApp({ Component, pageProps, router }) {
-  const [lenis, setLenis, fluidColor, isAbout] = useStore(useShallow((state) => [state.lenis, state.setLenis, state.fluidColor, state.isAbout]));
+  const [lenis, setLenis, fluidColor, isAbout] = useStore(
+    useShallow((state) => [
+      state.lenis,
+      state.setLenis,
+      state.fluidColor,
+      state.isAbout,
+    ]),
+  );
 
   const mainRef = useRef();
   const mainContainerRef = useRef();
@@ -72,7 +79,7 @@ function MyApp({ Component, pageProps, router }) {
       wrapper: mainRef.current || undefined,
       content: mainContainerRef.current || undefined,
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
       lerp: 0.1,
       infinite: false,
       gestureOrientation: 'vertical',
@@ -120,7 +127,10 @@ function MyApp({ Component, pageProps, router }) {
       <Canvas
         gl={{
           pixelRatio: 0.5,
-          outputColorSpace: isAbout === false ? THREE.LinearSRGBColorSpace : THREE.SRGBColorSpace,
+          outputColorSpace:
+            isAbout === false
+              ? THREE.LinearSRGBColorSpace
+              : THREE.SRGBColorSpace,
         }}
         style={{ zIndex: 0 }}
         resize={{ debounce: { resize: 0, scroll: 0 }, polyfill: undefined }}
@@ -160,7 +170,11 @@ function MyApp({ Component, pageProps, router }) {
             </EffectComposer>
           </Canvas>
           <main ref={mainRef} className={styles.main}>
-            <div ref={mainContainerRef} id="mainContainer" className={styles.mainContainer}>
+            <div
+              ref={mainContainerRef}
+              id="mainContainer"
+              className={styles.mainContainer}
+            >
               <Layout layoutRef={layoutRef} mainRef={mainRef} router={router}>
                 <Component {...pageProps} />
               </Layout>

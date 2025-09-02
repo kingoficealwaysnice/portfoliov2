@@ -4,35 +4,37 @@ import Link from 'next/link';
 import clsx from 'clsx';
 import projects from '@src/constants/projects';
 import styles from '@src/pages/projects/projects.module.scss';
-import useIsMobile from '@src/hooks/useIsMobile';
 
 const seo = {
   title: 'Khushal - Projects',
-  description: 'Explore my portfolio of machine learning and blockchain development projects',
+  description:
+    'Explore my portfolio of machine learning and blockchain development projects',
   keywords: [
     'machine learning projects',
     'blockchain development',
     'AI applications',
     'smart contracts',
-    'Khushal portfolio'
+    'Khushal portfolio',
   ],
 };
 
 function Page() {
-  const isMobile = useIsMobile();
-
   return (
     <>
-      <CustomHead {...seo} />
+      <CustomHead
+        title={seo.title}
+        description={seo.description}
+        keywords={seo.keywords}
+      />
       <section className={clsx(styles.titleContainer, 'layout-block-inner')}>
         <h1 className={clsx(styles.title, 'h1')}>All Projects</h1>
       </section>
       <section className={clsx(styles.root, 'layout-block-inner')}>
         <div className={styles.projectsGrid}>
           {projects.map((project, index) => (
-            <Link 
-              key={project.id} 
-              href={project.link} 
+            <Link
+              key={project.id}
+              href={project.link}
               className={styles.projectCard}
               aria-label={`View ${project.title} project`}
             >
@@ -42,7 +44,7 @@ function Page() {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  loading={index < 2 ? "eager" : "lazy"}
+                  loading={index < 2 ? 'eager' : 'lazy'}
                   className={styles.image}
                 />
                 <div className={styles.overlay} />
@@ -56,7 +58,9 @@ function Page() {
                 <p className={styles.description}>{project.description}</p>
                 <div className={styles.techStack}>
                   {project.tech.slice(0, 3).map((tech) => (
-                    <span key={tech} className={styles.tech}>{tech}</span>
+                    <span key={tech} className={styles.tech}>
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </div>

@@ -9,7 +9,15 @@ import { useShallow } from 'zustand/react/shallow';
 import { useStore } from '@src/store';
 
 function Loader() {
-  const [lenis, introOut, setIntroOut, setIsLoading, setIsAbout] = useStore(useShallow((state) => [state.lenis, state.introOut, state.setIntroOut, state.setIsLoading, state.setIsAbout]));
+  const [lenis, introOut, setIntroOut, setIsLoading, setIsAbout] = useStore(
+    useShallow((state) => [
+      state.lenis,
+      state.introOut,
+      state.setIntroOut,
+      state.setIsLoading,
+      state.setIsAbout,
+    ]),
+  );
 
   const progressRef = useRef(null);
   const fullNameRef = useRef(null);
@@ -19,7 +27,9 @@ function Loader() {
 
   // Skip loader entirely if already completed on previous visit
   useEffect(() => {
-    const hasCompletedLoader = typeof window !== 'undefined' && sessionStorage.getItem('loaderCompleted');
+    const hasCompletedLoader =
+      typeof window !== 'undefined' &&
+      sessionStorage.getItem('loaderCompleted');
     if (hasCompletedLoader && !introOut) {
       setIntroOut(true);
       setIsLoading(false);
@@ -31,14 +41,17 @@ function Loader() {
     let ctx;
 
     // Check if loader has already completed to skip on route changes
-    const hasCompletedLoader = typeof window !== 'undefined' && sessionStorage.getItem('loaderCompleted');
+    const hasCompletedLoader =
+      typeof window !== 'undefined' &&
+      sessionStorage.getItem('loaderCompleted');
 
     // Skip loader entirely if already completed
     if (!introOut && !hasCompletedLoader) {
       setIsAbout(router.asPath === '/about');
 
       // Ultra-fast loading - initial load takes 0.5s, route changes are instant
-      const isInitialLoad = typeof window !== 'undefined' && !sessionStorage.getItem('hasVisited');
+      const isInitialLoad =
+        typeof window !== 'undefined' && !sessionStorage.getItem('hasVisited');
 
       ctx = gsap.context(() => {
         gsap.to(progressRef.current, {
@@ -173,7 +186,11 @@ function Loader() {
   }, [lenis, introOut]);
 
   return (
-    <div id="loader" ref={root} className={clsx(styles.root, 'layout-block-inner')}>
+    <div
+      id="loader"
+      ref={root}
+      className={clsx(styles.root, 'layout-block-inner')}
+    >
       <div className={styles.innerContainer}>
         <div className={styles.fullNameContainer}>
           <h2 ref={fullNameRef} className={clsx(styles.fullName, 'h2')}>

@@ -13,7 +13,11 @@ const getSchema = () => ({
   url: SITE_URL,
   image: OG_IMAGE,
   email: 'mailto:khushal.singh1123@gmail.com',
-  sameAs: ['https://www.linkedin.com/in/khushal-singh-%E2%9C%AA', 'https://github.com/kingoficealwaysnice', 'https://www.instagram.com/zutck'],
+  sameAs: [
+    'https://www.linkedin.com/in/khushal-singh-%E2%9C%AA',
+    'https://github.com/kingoficealwaysnice',
+    'https://www.instagram.com/zutck',
+  ],
   alumniOf: [
     { '@type': 'Organization', name: 'Company 1' },
     { '@type': 'Organization', name: 'Company 2' },
@@ -29,9 +33,22 @@ function CustomHead({ title = '', description, keywords }) {
         {/* General Meta Tags */}
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta httpEquiv="x-dns-prefetch-control" content="off" />
-        <meta name="robots" content={process.env.NODE_ENV !== 'development' ? 'index,follow' : 'noindex,nofollow'} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="keywords" content={keywords && keywords.length ? keywords.join(',') : keywords} />
+        <meta
+          name="robots"
+          content={
+            process.env.NODE_ENV !== 'development'
+              ? 'index,follow'
+              : 'noindex,nofollow'
+          }
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta
+          name="keywords"
+          content={keywords && keywords.length ? keywords.join(',') : keywords}
+        />
         <meta name="author" content="Khushal Singh" />
         <meta name="referrer" content="no-referrer" />
         <meta name="format-detection" content="telephone=no" />
@@ -57,9 +74,23 @@ function CustomHead({ title = '', description, keywords }) {
 
         {/* Favicons */}
         <link rel="icon" href="https://khushal.me/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333" />
         <meta name="msapplication-TileColor" content="#f0f4f1" />
@@ -67,7 +98,10 @@ function CustomHead({ title = '', description, keywords }) {
 
         {/* Schema */}
         {/* eslint-disable-next-line react/no-danger */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getSchema()) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getSchema()) }}
+        />
       </NextHead>
       <NextSeo title={title} description={description} />
     </>

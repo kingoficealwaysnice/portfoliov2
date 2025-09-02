@@ -48,11 +48,21 @@ function Hero() {
   return (
     <section ref={rootRef} className={clsx(styles.root, 'layout-block-inner')}>
       <header className={styles.titleContainer}>
-        <h2 className={clsx(styles.title, 'h2')}>Building intelligent decentralized systems with AI and blockchain technology.</h2>
+        <h2 className={clsx(styles.title, 'h2')}>
+          Building intelligent decentralized systems with AI and blockchain
+          technology.
+        </h2>
       </header>
       <div className={styles.wrapper}>
         <div ref={heroImageRef} className={styles.imageContainer}>
-          <Image priority quality={100} src="/giats/back.webp" sizes="100%" fill alt="Khushal Back" />
+          <Image
+            priority
+            quality={100}
+            src="/giats/back.webp"
+            sizes="100%"
+            fill
+            alt="Khushal Back"
+          />
         </div>
       </div>
     </section>

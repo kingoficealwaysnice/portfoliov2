@@ -32,7 +32,8 @@ const projects = [
     date: '2024',
     category: 'NFT',
     tech: ['Python', 'OpenCV', 'Solidity', 'Next.js', 'FastAPI'],
-    description: 'AI-driven NFT marketplace with fraud detection and auto-pricing',
+    description:
+      'AI-driven NFT marketplace with fraud detection and auto-pricing',
     company: 'NFT Tech',
 
     primary: '#263745',
@@ -57,7 +58,8 @@ const projects = [
     date: '2024',
     category: 'Analytics',
     tech: ['React', 'D3.js', 'Web3.js', 'PostgreSQL', 'Redis'],
-    description: 'Real-time blockchain analytics dashboard with advanced visualizations',
+    description:
+      'Real-time blockchain analytics dashboard with advanced visualizations',
     company: 'Chain Analytics',
 
     primary: '#000000',
@@ -82,7 +84,8 @@ const projects = [
     date: '2024',
     category: 'ML/Real Estate',
     tech: ['Python', 'Scikit-learn', 'Pandas', 'XGBoost', 'React', 'FastAPI'],
-    description: 'AI-powered real estate price prediction system using advanced ML models',
+    description:
+      'AI-powered real estate price prediction system using advanced ML models',
     company: 'RealTech Solutions',
 
     primary: '#000000',
@@ -106,8 +109,15 @@ const projects = [
     link: '/projects/project2',
     date: '2024',
     category: 'Blockchain Security',
-    tech: ['Solidity', 'Python', 'Machine Learning', 'Ethereum', 'Security Analysis'],
-    description: 'Comprehensive blockchain security platform with AI-powered threat detection',
+    tech: [
+      'Solidity',
+      'Python',
+      'Machine Learning',
+      'Ethereum',
+      'Security Analysis',
+    ],
+    description:
+      'Comprehensive blockchain security platform with AI-powered threat detection',
     company: 'BlockChainGuard Security',
 
     primary: '#0e0063',

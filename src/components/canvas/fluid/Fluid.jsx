@@ -12,7 +12,18 @@ import usePointerEvents from '@src/components/canvas/fluid/hooks/usePointerEvent
 
 function Fluid({ mainRef, fluidColor }) {
   const OPTS = useOpts();
-  const { force, radius, curl, swirl, intensity, backgroundColor, showBackground, pressure, densityDissipation, velocityDissipation } = OPTS;
+  const {
+    force,
+    radius,
+    curl,
+    swirl,
+    intensity,
+    backgroundColor,
+    showBackground,
+    pressure,
+    densityDissipation,
+    velocityDissipation,
+  } = OPTS;
   const size = useThree((three) => three.size);
   const gl = useThree((three) => three.gl);
 
@@ -77,15 +88,40 @@ function Fluid({ mainRef, fluidColor }) {
     }
 
     const shaderUpdates = [
-      { material: 'curl', uniforms: { uVelocity: FBOs.velocity.read.texture }, target: 'curl' },
-      { material: 'vorticity', uniforms: { uVelocity: FBOs.velocity.read.texture, uCurl: FBOs.curl.texture, uCurlValue: curl }, target: 'velocity' },
-      { material: 'divergence', uniforms: { uVelocity: FBOs.velocity.read.texture }, target: 'divergence' },
-      { material: 'clear', uniforms: { uTexture: FBOs.pressure.read.texture, uClearValue: pressure }, target: 'pressure' },
+      {
+        material: 'curl',
+        uniforms: { uVelocity: FBOs.velocity.read.texture },
+        target: 'curl',
+      },
+      {
+        material: 'vorticity',
+        uniforms: {
+          uVelocity: FBOs.velocity.read.texture,
+          uCurl: FBOs.curl.texture,
+          uCurlValue: curl,
+        },
+        target: 'velocity',
+      },
+      {
+        material: 'divergence',
+        uniforms: { uVelocity: FBOs.velocity.read.texture },
+        target: 'divergence',
+      },
+      {
+        material: 'clear',
+        uniforms: {
+          uTexture: FBOs.pressure.read.texture,
+          uClearValue: pressure,
+        },
+        target: 'pressure',
+      },
     ];
 
     shaderUpdates.forEach(({ material, uniforms, target }) => {
       setShaderMaterial(material);
-      Object.entries(uniforms).forEach(([key, value]) => setUniforms(material, key, value));
+      Object.entries(uniforms).forEach(([key, value]) =>
+        setUniforms(material, key, value),
+      );
       setRenderTarget(target);
     });
 
