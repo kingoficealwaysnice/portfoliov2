@@ -2,7 +2,7 @@ const projects = [
   {
     id: 'project3',
     title: 'DeFi Yield Farming Protocol',
-    img: '/project1/Gemini_Generated_Image_jc3c5qjc3c5qjc3c.png',
+    img: '/project3/defi-yield.svg',
     link: '/projects/project3',
     date: '2023',
     category: 'DeFi',
