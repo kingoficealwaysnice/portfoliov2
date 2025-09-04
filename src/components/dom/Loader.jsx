@@ -55,7 +55,7 @@ function Loader() {
 
       ctx = gsap.context(() => {
         gsap.to(progressRef.current, {
-          duration: isInitialLoad ? 0.3 : 0.05,
+          duration: isInitialLoad ? 1.5 : 0.05,
           ease: 'power2.inOut',
           innerText: `${100}%`,
           roundProps: 'innerText',
@@ -76,7 +76,7 @@ function Loader() {
               gsap.to(line, {
                 ease: 'power4.inOut',
                 top: '-12vw',
-                duration: isInitialLoad ? 0.1 : 0.05,
+                duration: isInitialLoad ? 0.5 : 0.05,
               });
             });
             gsap.to(shortNameRef.current, {
@@ -90,7 +90,7 @@ function Loader() {
               gsap.to(line, {
                 ease: 'power4.inOut',
                 top: '0px',
-                duration: isInitialLoad ? 0.1 : 0.05,
+                duration: isInitialLoad ? 0.5 : 0.05,
               });
             });
 
@@ -102,7 +102,7 @@ function Loader() {
               gsap.to(line, {
                 ease: 'power4.inOut',
                 top: '-12vw',
-                duration: isInitialLoad ? 0.1 : 0.05,
+                duration: isInitialLoad ? 0.5 : 0.05,
               });
             });
             lenis.scrollTo(0, { force: true });
@@ -121,45 +121,45 @@ function Loader() {
             gsap.to(root.current, {
               scale: 0.9,
               ease: 'power2.inOut',
-              delay: isInitialLoad ? 0.1 : 0.02,
-              duration: isInitialLoad ? 0.1 : 0.05,
+              delay: isInitialLoad ? 1.5 : 0.02,
+              duration: isInitialLoad ? 0.5 : 0.05,
               borderRadius: '1.3888888889vw',
             });
             gsap.to(root.current, {
               ease: 'power2.inOut',
-              delay: isInitialLoad ? 0.2 : 0.04,
-              duration: isInitialLoad ? 0.1 : 0.05,
+              delay: isInitialLoad ? 2 : 0.04,
+              duration: isInitialLoad ? 0.5 : 0.05,
               x: '-100%',
             });
 
             gsap.to('main', {
               ease: 'power2.inOut',
-              delay: isInitialLoad ? 0.2 : 0.04,
-              duration: isInitialLoad ? 0.1 : 0.05,
+              delay: isInitialLoad ? 2 : 0.04,
+              duration: isInitialLoad ? 0.5 : 0.05,
               x: '0px',
             });
             gsap.to('main', {
               ease: 'power2.inOut',
-              delay: isInitialLoad ? 0.3 : 0.06,
-              duration: isInitialLoad ? 0.1 : 0.05,
+              delay: isInitialLoad ? 2.5 : 0.06,
+              duration: isInitialLoad ? 0.5 : 0.05,
               scale: 1,
               borderRadius: 0,
             });
             gsap.to(document?.getElementById('layout'), {
               ease: 'power2.inOut',
-              delay: isInitialLoad ? 0.3 : 0.06,
-              duration: isInitialLoad ? 0.1 : 0.05,
+              delay: isInitialLoad ? 2.5 : 0.06,
+              duration: isInitialLoad ? 0.5 : 0.05,
               height: '100%',
             });
             gsap.to('header', {
-              delay: isInitialLoad ? 0.4 : 0.08,
-              duration: isInitialLoad ? 0.1 : 0.05,
+              delay: isInitialLoad ? 3 : 0.08,
+              duration: isInitialLoad ? 0.5 : 0.05,
               ease: 'power2.inOut',
               autoAlpha: 1,
             });
             gsap.to('main', {
               ease: 'power2.inOut',
-              delay: isInitialLoad ? 0.5 : 0.1,
+              delay: isInitialLoad ? 3.5 : 0.1,
               height: 'auto',
               border: 'none',
               pointerEvents: 'auto',
